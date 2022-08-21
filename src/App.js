@@ -1,10 +1,14 @@
 import React from "react";
-import HomePage from "./pages/HomePage";
+import TimerView from "./pages/TimerView";
+import appState from "./store/appState";
+import TodoList from "./pages/TodoList";
+import todoStore from "./store/todoStore";
 
 export default function App(props) {
   return (
     <div>
-      <HomePage />
+      {/* <TimerView appState={appState} /> */}
+      <TodoList todoStore={todoStore} />
     </div>
   );
 }
